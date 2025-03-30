@@ -41,10 +41,10 @@ int main() {
         // for numbers 
 
         for (int k = 1 ; k <= 2 * val - 1 ; k++){
-         if (k == 1 || k == val){
+         if (k == 1 || k == rows - 1){
            cout << 1;
          }
-      else if (k <= i) {
+      else if (k <= val) {
           cout << k;
       }
        else {
