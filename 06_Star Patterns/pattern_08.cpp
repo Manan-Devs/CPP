@@ -44,7 +44,7 @@ int main() {
          if (k == 1 || k == 2 * val - 1){
            cout << 1;
          }
-      // A . I give me solution for code below
+      // A.I give me hint for code below
       else if (k <= val) {
           cout << k;
       }
