@@ -3,13 +3,13 @@ using namespace std;
 
 /*void printName() {
      // function to print name
-    int n; 
+      int n; 
     //cout << "Enter the value of n " << endl;
 
     cin >> n;
     for (int i = 0; i < n; i++){
         // cout << "Manan" <<endl;
-    }
+    }  
 }
 
 void printNumber(int num){
@@ -141,9 +141,9 @@ int  add(int a , int b) {
    int ans = getEvenSum(n); 
    cout << "Sum up to " << n << " even numbers " << ans << endl;
     return 0;
-}
 
 
-     
+
+   }
    
 
