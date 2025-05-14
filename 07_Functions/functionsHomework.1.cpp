@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string> // Include string for using string type
-#include <vector> // Include vector for using vector type 
 using namespace std;
 
 // Function to calculate the circumference of a circle
@@ -30,7 +29,7 @@ string findEvenOdd(int n) {
 
   // Function to check isNumberPrime or not
 
-   string primeNumber(int primeNum) {
+   string checkPrime(int primeNum) {
         if (primeNum <= 1) {
              return "not prime";
         }
@@ -45,26 +44,7 @@ string findEvenOdd(int n) {
    }
 
    
- // A.I assisted
-// Function to print all prime numbers from 1 to N
-vector<int> printPrimetoN(int N) {
-    vector<int> primes; // Vector to store prime numbers
-    if (N > 1) {
-        for (int i = 2; i <= N; i++) { // Loop through numbers from 2 to N
-            bool isPrime = true; // Assume the number is prime
-            for (int j = 2; j <= i / 2; j++) { // Check divisors from 2 to i/2
-                if (i % j == 0) { // If divisible, it's not prime
-                    isPrime = false;
-                    break; // Exit the inner loop
-                }
-            }
-            if (isPrime) {
-                primes.push_back(i); // Add the prime number to the vector
-            }
-        }
-    }
-    return primes; // Return the vector of prime numbers
-}
+   
   
 
 int main() {
@@ -91,20 +71,20 @@ int main() {
     cin >> primeNum;
     cout << "Your given number is :" << primeNumber(primeNum) << endl;
  
-     // Print all prime numbers from 1 to N
+    // Print all prime numbers from 1 to N 
     int N;
-    cout << "Enter the Number" << endl;
+    cout << "Enter your number : " << endl;
     cin >> N;
+    cout << "All prime numbers from 1 to " << N << " are : ";
+     for (int j = 2; j <= N; j++) {
+         if (checkPrime(j) == "prime") {
+             cout << j << " "; // Print prime number 
+         }
+     } 
+    cout << endl; 
 
-    // Get all prime numbers from 1 to N
-    vector<int> primes = printPrimetoN(N);
 
-    // Print the prime numbers
-    cout << "All prime numbers from 1 to " << N << " are: ";
-    for (int prime : primes) {
-        cout << prime << " ";
-    }
-    cout << endl;
+
 
     return 0;
 }
