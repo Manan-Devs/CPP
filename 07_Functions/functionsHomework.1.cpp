@@ -32,7 +32,7 @@ string findEvenOdd(int n) {
 
    string primeNumber(int primeNum) {
         if (primeNum <= 1) {
-             return 0;
+             return "not prime";
         }
         else {
            for (int i = primeNum - 1; i > 1; i--) {
