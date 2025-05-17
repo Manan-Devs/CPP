@@ -23,6 +23,7 @@ using namespace std;
      }
       }
         // function to set the ith bit of a binary number from Msb to Lsb
+       // set your ith bit according to binary bit-indexing;
          int setIthBit(int N , int i) {
            int binary = binaryNum(N);
            string binStr = to_string(binary);
