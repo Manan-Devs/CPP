@@ -53,13 +53,5 @@ using namespace std;
      //cin >> celsius;
      //cout << "Your given temperature in fahrenheit : " << celsiusToFahrenheit(celsius) << endl;
     
-      int N;
-      cout << "Enter your decimal number : " << endl;
-      cin >> N;
-      int i;
-      cout << "Set your ith bit : " << endl;
-      cin >> i;
-      cout << "Your binary number is : " << setIthBit(N , i) << endl;
-      cout << setIthBit(N , i) << endl;
-      return 0;
+     
 }
