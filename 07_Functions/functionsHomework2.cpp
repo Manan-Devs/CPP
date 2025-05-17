@@ -22,15 +22,17 @@ using namespace std;
            binaryN = binaryN / 10;
      }
       }
-        // function to set the ith bit of a binary number from Msb to Lsb
-       // set your ith bit according to binary bit-indexing;
+         // function to set the ith bit of a binary number from Msb to lsb;
+        // set your ith bit according to binary bit-indexing;
          int setIthBit(int N , int i) {
            int binary = binaryNum(N);
            string binStr = to_string(binary);
-           if (binStr[i] == '0') {
-              binStr[i] = '1';
+           if (binary > 0) {
+             if (binStr[binStr.length() - 1 - i] == '0') {
+              binStr[binStr.length() - 1 - i] = '1';
            }
-          //... modify binStr ...
+           }
+            //... modify binStr ...
           int newBinary = stoi(binStr);
           return newBinary;
     }
