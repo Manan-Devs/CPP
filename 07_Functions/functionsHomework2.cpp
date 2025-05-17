@@ -1,8 +1,9 @@
 #include <iostream>
 #include <string>
+#include <cmath>
 using namespace std;
  
-      // function to convert decimal to binary
+    // function to convert decimal to binary
     int binaryNum(int N) {
       int binaryN = 0; 
       int place = 1;
@@ -20,11 +21,11 @@ using namespace std;
           while (binaryN > 0) {
            digitCount++;
            binaryN = binaryN / 10;
-     }
+          }
+       return digitCount;
       }
-         // function to set the ith bit of a binary number from Msb to lsb;
-        // set your ith bit according to binary bit-indexing;
-         int setIthBit(int N , int i) {
+       // function to set the ith bit of a binary number from Lsb to Msb;
+         string setIthBit(int N , int i) {
            int binary = binaryNum(N);
            string binStr = to_string(binary);
            if (binary > 0) {
@@ -32,11 +33,16 @@ using namespace std;
               binStr[binStr.length() - 1 - i] = '1';
            }
            }
-            //... modify binStr ...
-          int newBinary = stoi(binStr);
-          return newBinary;
+           return binStr;
     }
-     
+     int reverseInteger(int num) {
+    int n = 0;
+    while(num > 0) {
+        n = n * 10 + num % 10;
+        num = num / 10;
+    }
+    return n;
+}
         
    // function to convert celsius to fahrenheit
     int celsiusToFahrenheit(int celsius) {
@@ -55,14 +61,19 @@ using namespace std;
      //cout << "Enter your temperature in celsius : " << endl;
      //cin >> celsius;
      //cout << "Your given temperature in fahrenheit : " << celsiusToFahrenheit(celsius) << endl;
-      int N;
-      cout << "Enter your decimal number : " << endl;
-      cin >> N;
-      int i;
-      cout << "Set your ith bit : " << endl;
-      cin >> i;
-      cout << "Your binary number is : " << setIthBit(N , i) << endl;
-      cout << setIthBit(N , i) << endl;
+    
+      // int N;
+      // cout << "Enter your decimal number : " << endl;
+      // cin >> N;
+      // int i;
+      // cout << "Set your ith bit : " << endl;
+      // cin >> i;
+      // cout << "Your binary number is : " << setIthBit(N , i) << endl;
+
+      int num;
+      cout << "Enter your num to reverse it :" << endl;
+      cin >> num;
+      cout << "Your reversed integer is : " << reverseInteger(num) << endl;
+      
       return 0;
-     
 }
