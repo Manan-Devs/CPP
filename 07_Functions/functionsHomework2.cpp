@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>
-#include <cmath>
 using namespace std;
  
     // function to convert decimal to binary
@@ -36,14 +35,17 @@ using namespace std;
 🟨    }🟨
 🟨    return binStr;🟨
 🟨}🟨
-     int reverseInteger(int num) {
-    int n = 0;
-    while(num > 0) {
-        n = n * 10 + num % 10;
-        num = num / 10;
-    }
-    return n;
-}
+
+ // function to reverse an integer 
+  // function to reverse an integer
+🟨int reverseInteger(int num) {🟨
+🟨    int n = 0;🟨
+🟨    while(num > 0) {🟨
+🟨        n = n * 10 + num % 10;🟨
+🟨        num = num / 10;🟨
+🟨    }🟨
+🟨    return n;🟨
+🟨}🟨
         
    // function to convert celsius to fahrenheit
     int celsiusToFahrenheit(int celsius) {
@@ -53,23 +55,23 @@ using namespace std;
 
 
     int main() {
-     //int num;
-     //cout << "Enter your integer : " << endl;
-     //cin >> num;
-     //cout << "Your reversed integer is : " << reverseInteger(num) << endl;
+     int num;
+     cout << "Enter your integer : " << endl;
+     cin >> num;
+     cout << "Your reversed integer is : " << reverseInteger(num) << endl;
     
-     //int celsius;
-     //cout << "Enter your temperature in celsius : " << endl;
-     //cin >> celsius;
-     //cout << "Your given temperature in fahrenheit : " << celsiusToFahrenheit(celsius) << endl;
+     int celsius;
+     cout << "Enter your temperature in celsius : " << endl;
+     cin >> celsius;
+     cout << "Your given temperature in fahrenheit : " << celsiusToFahrenheit(celsius) << endl;
     
-      // int N;
-      // cout << "Enter your decimal number : " << endl;
-      // cin >> N;
-      // int i;
-      // cout << "Set your ith bit : " << endl;
-      // cin >> i;
-      // cout << "Your binary number is : " << setIthBit(N , i) << endl;
+       int N;
+       cout << "Enter your decimal number : " << endl;
+       cin >> N;
+       int i;
+       cout << "Set your ith bit : " << endl;
+       cin >> i;
+       cout << "Your binary number is : " << setIthBit(N , i) << endl;
 
       int num;
       cout << "Enter your num to reverse it :" << endl;
