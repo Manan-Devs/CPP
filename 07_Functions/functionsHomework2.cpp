@@ -22,17 +22,7 @@ using namespace std;
            binaryN = binaryN / 10;
      }
       }
-       // function to set the ith bit of a number 
-         int setIthBit(int N , int i) {
-           int binary = binaryNum(N);
-           string binStr = to_string(binary);
-           if (binStr[i] == '0') {
-              binStr[i] = '1';
-           }
-          //... modify binStr ...
-          int newBinary = stoi(binStr);
-          return newBinary;
-    }
+     
         
    // function to convert celsius to fahrenheit
     int celsiusToFahrenheit(int celsius) {
