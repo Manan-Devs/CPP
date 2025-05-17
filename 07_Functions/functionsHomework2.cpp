@@ -24,17 +24,18 @@ using namespace std;
           }
        return digitCount;
       }
-       // function to set the ith bit of a binary number from Lsb to Msb;
-         string setIthBit(int N , int i) {
-           int binary = binaryNum(N);
-           string binStr = to_string(binary);
-           if (binary > 0) {
-             if (binStr[binStr.length() - 1 - i] == '0') {
-              binStr[binStr.length() - 1 - i] = '1';
-           }
-           }
-           return binStr;
+// function to set the ith bit of a binary number from Lsb to Msb;
+// A.I assisted
+string setIthBit(int N , int i) {
+    int binary = binaryNum(N);
+    string binStr = to_string(binary);
+    if (binary > 0) {
+        if (binStr[binStr.length() - 1 - i] == '0') {
+            binStr[binStr.length() - 1 - i] = '1';
+        }
     }
+    return binStr;
+}
      int reverseInteger(int num) {
     int n = 0;
     while(num > 0) {
