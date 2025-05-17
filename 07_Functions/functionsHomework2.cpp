@@ -2,18 +2,7 @@
 #include <string>
 using namespace std;
  
-    // function to convert decimal to binary
-    int binaryNum(int N) {
-      int binaryN = 0; 
-      int place = 1;
-        while (N > 0) {
-       // binary integer creation
-         binaryN = N % 2 * place + binaryN;
-           N  = N / 2;
-           place = place * 10;
-        }
-        return binaryN;
-    }
+   
      // to count the number of bits in binary number
       int countBits(int binaryN) {
         int digitCount = 0;
