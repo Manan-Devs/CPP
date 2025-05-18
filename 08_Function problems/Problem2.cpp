@@ -15,7 +15,7 @@ float sumOfSeries(int n) {
  int main() {
     int n;
     cout << "Enter your n: ";
-    cin>> ;
+    cin>>n ;
     cout << "Sum of series up to n: " << sumOfSeries(n) << endl;
     return 0;
 }
