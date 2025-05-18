@@ -8,6 +8,19 @@ using namespace std;
      for (int i = num; i > 0; i = i/10){
        sum+= i % 10;
      }
+      if (sum <= 9) {
+         sum = sum;
+      }
+      else {
+        int tempSum = sum;
+        int newSum = 0;
+         while(tempSum > 0) {
+            newSum+= tempSum % 10;
+            tempSum/= 10;
+         }
+         return newSum;
+      }
+      
      return sum;
  }
 
