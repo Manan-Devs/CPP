@@ -2,8 +2,8 @@
 using namespace std;
 
 // function to print diamond pattern of stars 
- void diamondPattern(int size) {
-       
+  diamondPattern(int size) {
+   
  
 
 
