@@ -8,7 +8,6 @@ using namespace std;
 
 
 
-    int size;
     cout << "Enter your size: ";
     cin >> size;
     diamondPattern(size);
