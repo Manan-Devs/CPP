@@ -6,7 +6,7 @@ using namespace std;
          for (int j = 1; j <= size; j++) {
              cout << " " << i * j;
          }
-       cout << en;
+       cout << endl;
      }
  
  }
