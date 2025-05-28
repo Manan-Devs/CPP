@@ -7,8 +7,7 @@ using namespace std;
              cout << " " << i * j;
          }
        cout << endl;
-     }
- 
+     
  }
 
 
