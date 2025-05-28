@@ -13,7 +13,7 @@ using namespace std;
 
 
 
-int main() {
+int main() 
      int size;
      cout << "Enter your size : ";
      cin >> size;
