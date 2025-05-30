@@ -1,9 +1,13 @@
 #include <iostream>
 using namespace std;
 
-// function to print diamond pattern of stars 
- void diamondPattern(int size) {
-       
+// function to find the sum of the first N Even numbers 
+  int firstN_evenSum(int N ) {
+    int sum = 0;
+       for (int i = 2; i <= 2 * N; i = i + 2){
+          sum = sum + i;
+       }
+    return sum;
  }
 
 
