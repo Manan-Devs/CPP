@@ -16,4 +16,4 @@ using namespace std;
     cin >> N;
     cout << "Sum of first " << N << " even numbers: " << firstN_evenSum(N) << endl;
     return 0;
-}
+
