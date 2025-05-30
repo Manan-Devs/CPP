@@ -10,7 +10,7 @@ using namespace std;
          }
         cout << endl;
      }
-  }
+  
 
 
 int main() {
