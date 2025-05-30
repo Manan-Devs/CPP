@@ -10,14 +10,10 @@ using namespace std;
     return sum;
  }
 
-
-
-
-
-int main() {
-    int size;
-    cout << "Enter your size: ";
-    cin >> size;
-    diamondPattern(size);
+  int main() {
+     int N;
+    cout << "Enter your N: ";
+    cin >> N;
+    cout << "Sum of first " << N << " even numbers: " << firstN_evenSum(N) << endl;
     return 0;
 }
