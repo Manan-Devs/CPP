@@ -28,6 +28,6 @@ using namespace std;
     cin >> num;
     cout << "Largest prime factor of your given number is: ";
     cout << endl;
-    printPrime(num);
+    largestPrime(num);
     return 0;
 }
