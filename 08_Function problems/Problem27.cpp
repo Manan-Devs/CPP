@@ -8,6 +8,9 @@ using namespace std;
          if (str[i] == ' ' ){
              count++;
          }
+        else if (str[i] == '\'' || str[i] == ',' || str[i] == '.' || str[i] == '!' || str[i] == '?' || str[i] == ';' || str[i] == ':'){
+               continue;
+         }
      }
      return count;
   }
