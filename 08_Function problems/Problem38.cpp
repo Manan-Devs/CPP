@@ -9,9 +9,18 @@ using namespace std;
          if (N % i == 0) {
              sum+= i;
          }
-     }
+     } 
        if (sum == N){
         return "Perfect Number";
+       }
+       else if (N == 1){
+         return "Not Perfect Number";
+       }
+       else if (N > 10^6) {
+          return "Too large Number";
+       }
+       else if (N < 0){
+         return "Negative Number ignored";
        }
      return "";
   }
