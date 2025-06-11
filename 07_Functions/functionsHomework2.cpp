@@ -36,16 +36,18 @@ using namespace std;
 🟨    return binStr;🟨
 🟨}🟨
 
- // function to reverse an integer 
-  // function to reverse an integer
-🟨int reverseInteger(int num) {🟨
-🟨    int n = 0;🟨
-🟨    while(num > 0) {🟨
-🟨        n = n * 10 + num % 10;🟨
-🟨        num = num / 10;🟨
-🟨    }🟨
-🟨    return n;🟨
-🟨}🟨
+   // function to reverse an integer
+    long long reverseInteger(long long num) {
+      long long n = 0;
+      bool isNeg = num < 0;
+      num = abs(num);  
+      while(num != 0) {
+        n = n * 10 + num % 10;
+        num = num / 10;
+     }
+     if (isNeg) n = -n;
+     return (n);
+}
         
    // function to convert celsius to fahrenheit
     int celsiusToFahrenheit(int celsius) {
