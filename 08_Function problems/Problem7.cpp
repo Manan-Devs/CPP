@@ -1,32 +1,15 @@
 #include <iostream>
 using namespace std;
 
+// optimized code 
 void alternate01Matrix(int size) {
-     for (int i = 1; i <= size; i++) {
-        if (i % 2 != 0) {
-             for (int j = 1; j <= size; j++) {
-                 if (j % 2 != 0) {
-                     cout << 0;
-                 }
-                else {
-                     cout << 1;
-                }
-             }
-          cout << endl;
+    for (int i = 1; i <= size; i++) {
+        for (int j = 1; j <= size; j++) {
+            if ((i + j) % 2 == 0) cout << 0;
+            else cout << 1;
         }
-        else {
-            for (int j = 1; j <= size; j++) {
-             if (j % 2 != 0) {
-                cout << 1;
-             }
-            else {
-                cout << 0;
-            }
-        }
-       cout << endl;
+        cout << endl;
     }
-     
-}
 }
 int main() {
      int size;
