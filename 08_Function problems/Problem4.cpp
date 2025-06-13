@@ -2,17 +2,16 @@
 using namespace std;
 
 
-// function to find sum of digits of the product of two numbers 
-  int sumOfDigits(int num1 , int num2) {
-      int multiplyNums = num1 * num2;
-      int sum = 0;
+  // function to find sum of digits of the product of two numbers 
+     long long sumOfDigits(int num1 , int num2) {
+      long long multiplyNums = abs(num1 * num2);
+      long long sum = 0;
       while(multiplyNums > 0) {
          sum+= multiplyNums % 10;
          multiplyNums/= 10;
       }
       return sum;
   }
-   
    
    
    
