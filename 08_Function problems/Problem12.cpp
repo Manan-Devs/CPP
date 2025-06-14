@@ -1,12 +1,9 @@
 #include <iostream>
 using namespace std;
 
-int  sumSquaresUptoNeven(int N) {
-     int sum = 0;
-     for (int i = 2; i <= N; i = i + 2) {
-         sum = sum + (i*i);
-     }
-     return sum;
+int sumSquaresUptoNeven_Optimized(int N) {
+    int k = N / 2;
+    return 4 * (k * (k + 1) * (2 * k + 1)) / 6;
 }
 
 
