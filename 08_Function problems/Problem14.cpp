@@ -4,12 +4,23 @@ using namespace std;
 
  // function to generate multiplication table for given range of numbers 
   void multiplicationTable(int start , int end){
-       for (int i = 1; i <= end; i++){
+     if (start > end){
+          cout << "";       
+      }
+
+      else if (start <= 0) {
+          cout << "Please provide input greater than 0";
+          
+       }
+       else {
+           for (int i = 1; i <= end; i++){
           for (int j = start; j <= end; j++){
                cout << "   " <<  to_string(j) << " " << "*" << " " << to_string(i) << " " << "=" <<   " " << j * i;
           }
         cout << endl;
        }
+       }
+       
   }
 
   int main() {
