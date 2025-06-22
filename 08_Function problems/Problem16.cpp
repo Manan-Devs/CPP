@@ -1,26 +1,26 @@
 #include <iostream>
 using namespace std;
 
+// Optimized Version
 // function to find the Sum of first N prime numbers 
  int sumPrime(int N) {
      int count = 0;
      int sum = 0;
-     bool checkPrime;
      for(int i = 2; count < N; i++){
-         for (int j = i - 1; j > 1; j--){
-             if (i % j != 0){
-                checkPrime = true;
-             }
-             else {
+        bool checkPrime = true;
+         for (int j = 2; j <= sqrt(i); j++){
+             if (i % j == 0){
                 checkPrime = false;
                 break;
              }
          }
-          if (checkPrime == true) {
-             sum = sum + i;
+          if (checkPrime) {
+             cout << i << " ";
+             sum+= i;
              count++;
           }
      }
+      cout << endl;
      return sum;
  } 
  
