@@ -12,6 +12,21 @@ using namespace std;
            }
          }
  }
+
+
+ //  void checkPerfectSquares(int start, int end) {
+//     int s = ceil(sqrt(start));   // starting square root
+//     int e = floor(sqrt(end));    // ending square root
+
+//     for (int i = s; i <= e; i++) {
+//         cout << i * i << " ";
+//     }
+// }
+
+// root n (start) se root n (end) tak ke perfect squares print karne hain 
+// Time complexity : O(sqrt(n));
+
+
   int main() {
     int start;
     int end;
