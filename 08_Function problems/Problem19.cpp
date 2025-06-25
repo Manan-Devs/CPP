@@ -3,28 +3,27 @@ using namespace std;
 
 
 // function to Generating a pattern of prime numbers 
- void patternPrime(int rows){
-    bool checkPrime;
-     for (int i = 1; i <= rows; i++){
-        int count = 1;
-         for (int j = 2; count <= i; j++){
-             for (int k = j - 1; k > 1; k--) {
-                 if (j % k != 0){
-                     checkPrime = true;
-                 }
-                 else {
-                    checkPrime = false;
-                    break;
-                 }
-             }
-              if (checkPrime == true) {
-                 cout << j << " ";
-                 count++;
-              }
-             
-         }
-      cout << endl;
-     }
+ bool isPrime(int num) {
+    if (num <= 1) return false;
+    for (int i = 2; i <= sqrt(num); i++) {
+        if (num % i == 0) return false;
+    }
+    return true;
+}
+
+ void patternPrime(int rows) {
+    for (int i = 1; i <= rows; i++) {
+        int count = 0;
+        int num = 2;  // starting from 2 (first prime)
+        while (count < i) {
+            if (isPrime(num)) {
+                cout << num << " ";
+                count++;
+            }
+            num++;
+        }
+        cout << endl;
+    }
  }
 
 
