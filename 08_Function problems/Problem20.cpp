@@ -5,7 +5,7 @@ using namespace std;
 // function to find the largest prime factor of a given number
    void largestPrime(int num) {
      vector<int> largestPrime;
-     // find all prime factors of the number
+     // find all prime factors of he number
      for(int i = 2; i < num; i++){
          bool checkPrime = true;
          for (int j = i - 1; j > 1; j--){
