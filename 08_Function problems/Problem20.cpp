@@ -8,7 +8,7 @@ using namespace std;
      // find all prime factors of the number
      for(int i = 2; i < num; i++){
          bool checkPrime = true;
-         for (int j = i - 1;  > 1; j--){
+         for (int j = i - 1; j > 1; j--){
              if (i % j == 0){
                  checkPrime = false;
                  break;
