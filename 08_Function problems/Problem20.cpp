@@ -2,7 +2,7 @@
 #include <vector> // uses vector 
 using namespace std;
  
-// function to find the largest prime factor of a given number
+// function to find the largest prime fator of a given number
    void largestPrime(int num) {
      vector<int> largestPrime;
      // find all prime factors of the number
