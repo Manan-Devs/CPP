@@ -1,9 +1,11 @@
 #include <iostream>
 using namespace std;
 
-// function to create a diagonal matrix 
-
 void diagonalMatrix(int size) {
+     if (size <= 0 || size > 10^6 || size < -10^6){
+         cout << "Invalid size. Please enter a size between -10^6 and 10^6." << endl;
+     }
+
       for (int i = 1; i <= size; i++){
          for (int j = 0; j < size; j++){
              if (j < i){
@@ -16,6 +18,7 @@ void diagonalMatrix(int size) {
       cout << endl;
       }
 }
+
 
 
 
