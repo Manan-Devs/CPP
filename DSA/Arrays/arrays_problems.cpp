@@ -1,5 +1,5 @@
 #include <iostream>
-using namespace std
+using namespace std;
 
 //   // function to insert element at a given position
 //   int count = 0;
