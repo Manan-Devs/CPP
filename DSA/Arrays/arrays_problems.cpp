@@ -47,24 +47,78 @@ using namespace std;
           
    
  
+//   // function to delete element at a given index 
+//   int deleteElement(int n , int delIndex) {
+//      if (n <= 0 || delIndex < 0 || delIndex >= n) {
+//         cout << "Invalid input." << endl;
+//         return 0;
+//     }
+//      int arr[n];
+//     for(int i = 0; i < n; i++){
+//        cin >> arr[i];
+//      }
+//        for(int i = delIndex; i < n - 1; i++){
+//          arr[i] = arr[i + 1]; // shifting elements to the left
+//        } 
+      
+//      for(int i = 0; i < n - 1; i++){
+//          cout << arr[i] << " ";
+//       }
+//     }
+ 
+//  int main() {
+//      int n;
+//      int delIndex;
+//      cout << "Enter the size of the array: ";
+//      cin >> n;
+//      cout << "Enter the delIndex: ";
+//      cin >> delIndex;
+//      cout << "Enter the elements of the array: ";
+//      deleteElement(n , delIndex);
+//      return 0;
+//  }
+
+// function to check if a number array is sorted or not 
+ bool isSorted(int arr [] , int n){
+       if (n <= 0 || n >= 1000000 || !n){
+          cout << "Invalid input." << endl;
+          return false; // exit the function if input is invalid 
+       }
+      for(int i = 0; i < n - 1; i++){
+          if (arr[i] > arr[i + 1]){
+             return false; 
+          }
+          if (arr[i] == arr[i + 1]){
+             continue; // if two elements are equal , continue iteration by step 1
+          }
+      }
+     return true;
+ }
+
+
  int main() {
      int n;
-     int delIndex;
      cout << "Enter the size of the array: ";
      cin >> n;
      int arr[n];
-     cout << "Enter the delIndex: ";
-     cin >> delIndex;
      cout << "Enter the elements of the array: ";
+     if (sizeof(arr) == 0){
+        cout << "Array is empty." << endl;
+     }
      for(int i = 0; i < n; i++){
        cin >> arr[i];
      }
-       for(int i = delIndex; i < n - 1; i++){
-         arr[i] = arr[i + 1]; // shifting elements to the left
-       } 
-      
-     for(int i = 0; i < n - 1; i++){
-         cout << arr[i] << " ";
+     
+     if (isSorted(arr , n)){
+        cout << "The array is sorted." << endl;
      }
-   return 0;
+     else {
+       cout << "The array is not sorted." << endl;
+     }
+     return 0;
  }
+
+
+
+
+
