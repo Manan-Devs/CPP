@@ -70,7 +70,7 @@ using namespace std;
 //      int n;
 //      int delIndex;
 //      cout << "Enter the size of the array: ";
-//      cin >> n
+//      cin >> n;
 //      cout << "Enter the delIndex: ";
 //      cin >> delIndex;
 //      cout << "Enter the elements of the array: ";
