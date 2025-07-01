@@ -73,7 +73,7 @@ int main() {
        for(int i = 0; i < n; i++){
        int value;
        cin >> value;
-       elements.push_back(value); // push each element into an array
+       elements.push_bac(value); // push each element into an array
   }
     for(int i = 0; i < n; i++){
         int count = std::count(elements.begin(), elements.end(), elements[i]);
