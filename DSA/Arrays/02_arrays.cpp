@@ -111,7 +111,16 @@ using namespace std;
           cout << elements[i] << " is unique" << endl;
         }
     }
- 
+
+    vector<int> Union;
+     int n1;
+     int n2;
+     cout << "Enter size of array A: ";
+     cin >> n1;
+     cout << "Enter size of array B: ";
+     cin >> n2;
+     unionArrays(Union , n1 , n2);
+   
 
     
     
