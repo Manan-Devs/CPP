@@ -3,7 +3,37 @@
 #include <algorithm>
 using namespace std;
 
-int main() {
+ // function to unite both arrays 
+   void unionArrays(vector<int> Union , int n1 , int n2){
+     int A[n1];
+     int B[n2];
+     cout << "Enter elements of array A: ";
+     for(int i = 0; i < n1; i++){
+         cin >> A[i];
+     }
+     cout << "Enter elements of array B: ";
+     for(int i = 0; i < n2; i++){
+         cin >> B[i];
+     }
+
+     for(int i = 0; i < n1; i++){
+        Union.push_back(A[i]); // push elements of A into vector Union
+     }
+
+     for(int i = 0; i < n2; i++){
+        Union.push_back(B[i]); // push elements of B into vector Union
+     }
+
+     cout << "Union of both arrays is: " << endl;
+     for(int i = 0; i < n1 + n2; i++){
+        cout << Union[i] << " ";
+     }
+  }
+
+
+
+  
+  int main() {
      // Dynamic Array (Vector)
     
     // //create vector
