@@ -3,8 +3,33 @@
 #include <algorithm>
 using namespace std;
 
- // function to unite both arrays 
-   void unionArrays(vector<int> Union , int n1 , int n2){
+
+// function to find unique element in an array 
+  int UniqueElement(int n) {
+   // My Approach 
+
+   //  for(int i = 0; i < n; i++){
+   //      cin >> value;
+   //      elements.push_back(value); // push each element into an array
+   //    }
+    // for(int i = 0; i < n; i++){
+    //     int count = count(elements.begin(), elements.end(), elements[i]);
+    //     if (count == 1){
+    //       cout << elements[i] << " is unique" << endl;
+    //     }
+    // }
+        // Optimized Approach
+
+      // Find Unique Element by bitwise Operator
+    //  int ans = 0;
+    //  for (int i = 0; i < elements.size(); i++){
+    //       ans = ans ^ elements[i];
+    //  }
+    //  cout << "Unique element is: " << ans << endl;
+  }
+
+ // function to get union of  both arrays 
+ void unionArrays(vector<int> Union , int n1 , int n2){
      int A[n1];
      int B[n2];
      cout << "Enter elements of array A: ";
@@ -16,6 +41,16 @@ using namespace std;
          cin >> B[i];
      }
 
+      // remove duplicates from our union array 
+      for(int i = 0; i < A.size(); i++){
+          int element = A[i];
+          for(int j = 0; j < B.size(); j++){
+              if(element == B[j]){
+                 B[j] = INT_MIN;
+              }
+          }
+}
+
      for(int i = 0; i < n1; i++){
         Union.push_back(A[i]); // push elements of A into vector Union
      }
@@ -23,19 +58,21 @@ using namespace std;
      for(int i = 0; i < n2; i++){
         Union.push_back(B[i]); // push elements of B into vector Union
      }
-
+      
      cout << "Union of both arrays is: " << endl;
      for(int i = 0; i < n1 + n2; i++){
         cout << Union[i] << " ";
      }
-  }
 
-
+}
 
   
-  int main() {
-     // Dynamic Array (Vector)
-    
+
+
+
+int main() {
+
+    // Dynamic Array (Vector)
     // //create vector
     // vector<int> arr;
     // int ans = (sizeof(arr)/sizeof(int));
@@ -89,45 +126,45 @@ using namespace std;
     
     // vector <int> drr;
     // cout << "Vector drr is Empty or not " << drr.empty() << endl; // 1 (true)
+ 
 
-     
-    
-    vector<int> elements;
-    
+  //   vector<int>elements;
+  //   int value;
+  //   int n;
+  //   cout << "Enter the size of array: ";
+  //   cin >> n;
+  //   cout << "Enter elements of array: ";
 
-    int n;
-    cout << "Enter the size of array: ";
-    cin >> n;
-    cout << "Enter elements of array: ";
 
-       for(int i = 0; i < n; i++){
-       int value;
-       cin >> value;
-       elements.push_bac(value); // push each element into an array
-  }
-    for(int i = 0; i < n; i++){
-        int count = std::count(elements.begin(), elements.end(), elements[i]);
-        if (count == 1){
-          cout << elements[i] << " is unique" << endl;
-        }
-    }
+//      vector<int> Union;
+//      int n1;
+//      int n2;
+//      cout << "Enter size of array A: ";
+//      cin >> n1;
+//      cout << "Enter size of array B: ";
+//      cin >> n2;
+//      unionArrays(Union , n1 , n2);
+//      return 0;
+ 
 
-    vector<int> Union;
-     int n1;
-     int n2;
-     cout << "Enter size of array A: ";
-     cin >> n1;
-     cout << "Enter size of array B: ";
-     cin >> n2;
-     unionArrays(Union , n1 , n2);
-   
+  // outer loop on arr vector
+  // intersection of both arrays 
+   for(int i = 0; i < arr.size(); i++){
+       int element = arr[i];
+       // for every element , run loops on brr
+       for(int j = 0; j < brr.size(); j++){
+           if (element == brr[j]){
+             brr[j] = -1;
+             ans.push_back(element);
+           }
+       }
+   }
 
-    
-    
-    
-    
-    
-    
-    
-    return 0;
+   // print ans 
+   for(auto value : ans){
+       cout << value << " ";
+   }
+
+   cout << endl;
+
 }
