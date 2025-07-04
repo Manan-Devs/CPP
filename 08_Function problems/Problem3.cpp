@@ -7,7 +7,7 @@ using namespace std;
        return N * N;
     }
 
-   int main() {
+   int main() 
    int N;
    cout << "Enter the N:" ;
    cin >> N;
