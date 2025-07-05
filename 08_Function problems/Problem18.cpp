@@ -4,7 +4,7 @@ using namespace std;
 
  // Optimized Code 
    // function for Palindromic Numbers in a range 
-  void palindromeNums(int start , int end){
+  void palindromeNums(int start , in end){
     // Check for valid input range first 
     if (start < 0 || end < 0 || start > end || start == end || start > 1000000 || end > 1000000) {
         cout << "Invalid Input" << endl;
