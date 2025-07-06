@@ -5,7 +5,7 @@ using namespace std;
 // function to check if a given number is Narcissistic 
 string NarcissisticNum(int number){
     int sum = 0;
-    int digits = 0
+    int digits = 0;
     int tempNum = number;
     // count digits of number
     while(tempNum > 0){
