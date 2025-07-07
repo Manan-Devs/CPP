@@ -168,20 +168,19 @@ int main() {
    cout << endl;
 
 
-    vector <int> arr{10 , 20 , 30 , 40 , 50 , 60 , 70};
+    
+    vector <int> arr{10 , 20 , 30 , 40 , 60 , 70};
+    int sum = 80;
 
     // outer loop will traverse for each element 
     for(int i = 0; i < arr.size(); i++){
-       cout << "We are at element: " << arr[i] << endl;
-        int element = arr[i]; 
-        int sum = 90;
+        int element = arr[i];
       // for every element loop will traverse for other forward elements to it in array
       for(int j = i + 1; j < arr.size(); j++){
-          // cout << "{" << element << "," << arr[j] << "}" << endl;
-              cout << "pair" << element << "with" << arr[j] << endl;
-              cout << "sum is " << arr[i] + arr[j] << endl;
+          if (element + arr[j] == sum){
+             cout << "Pair FOund " << element << ", " << arr[j] << endl;
+          }
       }
         
   }
-}
 }
