@@ -183,4 +183,21 @@ int main() {
       }
         
   }
+
+
+    // print Triplets match with our sum 
+  vector <int> arr{10 , 20 , 30 , 40};
+  int sum = 80;
+       
+         // outer loop will traverse for each element 
+  for(int i = 0; i < arr.size(); i++){
+        int element = arr[i];
+      // for every element loop will traverse for other forward elements to it in array
+       for(int j = i + 1; j < arr.size(); j++){
+           for(int k = j + 1; k < arr.size(); k++){
+               if (element + arr[j] + arr[k] == sum){
+                  cout << "Triplet FOund " << element << "," << arr[j] << " and " << arr[k] << endl;
+            }
+    }
+}
 }
