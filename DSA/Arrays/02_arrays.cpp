@@ -199,5 +199,5 @@ int main() {
                   cout << "Triplet FOund " << element << "," << arr[j] << " and " << arr[k] << endl;
             }
     }
-}
+
 }
