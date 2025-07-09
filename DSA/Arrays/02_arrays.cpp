@@ -186,7 +186,7 @@ int main() {
 
 
     // print Triplets match with our sum 
-  vector <int> arr{10 , 20 , 30 , 40};
+  vector <int> arr{10 , 20 , 30 , 4};
   int sum = 80;
        
          // outer loop will traverse for each element 
