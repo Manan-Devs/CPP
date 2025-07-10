@@ -186,8 +186,8 @@ int main() {
 
 
     // print Triplets match with our sum 
-  vector <int> arr{10 , 20 , 30 , 40};
-  int sum = 80;
+  // vector <int> arr{10 , 20 , 30 , 40};
+  // int sum = 80;
        
          // outer loop will traverse for each element 
   for(int i = 0; i < arr.size(); i++){
