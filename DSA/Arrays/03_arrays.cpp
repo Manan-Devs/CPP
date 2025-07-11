@@ -10,7 +10,7 @@ int main() {
     int brr[3][3] = {
       {1 , 2 , 3},
       {4 , 5 , 6},
-      {2 , 4 , 8}
+      {2 , 4 , 8}};
     
   // row - wise accessing 
    for(int i = 0; i < 3; i++){
