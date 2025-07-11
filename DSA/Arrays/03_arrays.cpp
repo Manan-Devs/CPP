@@ -4,7 +4,7 @@ using namespace std;
 
 int main() {
      // declare 2d array
-     int arr[3][3]
+     int arr[3][3]'
 
      //intialisation
     int brr[3][3] = {
