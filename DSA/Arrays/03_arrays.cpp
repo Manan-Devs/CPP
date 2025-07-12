@@ -17,7 +17,7 @@ using namespace std;
 
 
   
- int main() 
+ int main() {
 //      // declare 2d array
 //      int arr[3][3];
 
