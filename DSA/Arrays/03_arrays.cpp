@@ -125,6 +125,11 @@ using namespace std;
   //  cout << getMin(arr , rows , cols);
 
 
+     int transpose[3][3];
+   cout << "Transpose of matrix printing: "<< endl;
+   Transpose(arr, rows, cols , transpose);
+
+
 
  
 }
