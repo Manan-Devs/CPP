@@ -14,6 +14,18 @@ int getMax(int arr[][4] , int rows , int cols){
   return maxi;
 }
 
+// function to find minimum element in 2-d Array
+int getMin(int arr[][4] , int rows , int cols){
+    int mini = INT_MAX;
+    for(int i = 0; i < rows; i++){
+        for(int j = 0; j < cols; j++){
+             if(arr[i][j] < mini)
+             mini = arr[i][j];
+        }
+    }
+  return mini;
+}
+
 
 
 
