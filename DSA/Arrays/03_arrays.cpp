@@ -110,6 +110,14 @@ using namespace std;
   // printColumnWiseSum(arr , rows, cols);
 
 
+  // int key = 12;
+  
+  // if (findKey(arr , rows , cols ,key))
+  // cout << "true" << endl;
+  // else 
+  // cout << "false" << endl;
+
+
 
 
 
