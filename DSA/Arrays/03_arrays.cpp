@@ -39,6 +39,19 @@ void Transpose(int arr[][4] , int rows , int cols , int transpose[][3]){
     }
 }
 
+// function to find the key inside our array (Linear Search);
+// bool findKey(int arr[][4] , int rows, int cols , int key){
+//        for(int i = 0; i < rows; i++){
+//           for(int j = 0; j < cols; j++){
+//                if(arr[i][j] == key)
+//                return true;
+//           }
+//        }
+    
+//   // value is not present 
+//   return false;
+// }
+
 
 
 
