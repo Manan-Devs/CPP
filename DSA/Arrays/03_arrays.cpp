@@ -118,6 +118,11 @@ using namespace std;
   // cout << "false" << endl;
 
 
+   // cout << "Maximum element in array: " << endl;
+  // cout << getMax(arr , rows , cols) << endl;
+
+  //  cout << "Minimum element in array: " << endl;
+  //  cout << getMin(arr , rows , cols);
 
 
 
