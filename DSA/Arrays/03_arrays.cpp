@@ -60,23 +60,7 @@ void Transpose(int arr[][4] , int rows , int cols , int transpose[][3]){
 
 
 
-
-
-// void printRowWiseSum(int arr[][3] , int rows ,int cols){
-//   for(int i = 0; i < rows; i++){
-//      int sum = 0;
-//      for(int j = 0; j < cols; j++){
-//         sum+= arr[i][j];
-//      }
-//     cout << sum << " ";
-//  } 
-//  }
-
-
-
-
-  
- int main() {
+int main() {
 //      // declare 2d array
 //      int arr[3][3];
 
