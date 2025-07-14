@@ -103,5 +103,15 @@ using namespace std;
 
 
 
+  // cout << "printing row - wise sum" << endl;
+  // printRowWiseSum(arr , rows , cols); 
+
+  // cout << "printing column - wise sum" << endl;
+  // printColumnWiseSum(arr , rows, cols);
+
+
+
+
+
  
 }
