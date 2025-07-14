@@ -52,7 +52,27 @@ void Transpose(int arr[][4] , int rows , int cols , int transpose[][3]){
 //   return false;
 // }
 
+// function to print row wise sum
+// void printRowWiseSum(int arr[][4] , int rows ,int cols){
+//   for(int i = 0; i < rows; i++){
+//      int sum = 0;
+//      for(int j = 0; j < cols; j++){
+//         sum+= arr[i][j];
+//      }
+//     cout << sum << " ";
+//  } 
+//  }
 
+// function to print column - wise sum
+// void printColumnWiseSum(int arr[][4] , int rows , int cols){
+//      for (int i = 0; i < cols; i++){
+//         int sum = 0;
+//        for(int j = 0; j < rows; j++){
+//           sum+= arr[j][i];
+//        }
+//       cout << sum << " ";
+//      }
+// }
 
 
 
