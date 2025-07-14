@@ -102,6 +102,6 @@ using namespace std;
 } 
 
 
-//  printRowWiseSum(arr[][3] rows in cols);
+
  
 }
