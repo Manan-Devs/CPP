@@ -27,6 +27,18 @@ int getMin(int arr[][4] , int rows , int cols){
 }
 
 
+// function to print Transpose of matrix 
+void Transpose(int arr[][4] , int rows , int cols , int transpose[][3]){
+    for(int i = 0; i < rows; i++){
+       for(int j = 0; j < cols; j++){
+          // cout << arr[j][i] << " ";
+          transpose[j][i] == arr[i][j];
+          cout << arr[i][j] << " "; 
+       }
+     cout << endl;
+    }
+}
+
 
 
 
