@@ -190,7 +190,7 @@ int main() {
 
      int transpose[3][3];
    cout << "Transpose of matrix printing: "<< endl;
-   Transpose(arr, rows, cols , transpose);
+   Transpose(arr, rows, cols , transpose)
 
 
 
