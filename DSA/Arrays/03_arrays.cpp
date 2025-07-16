@@ -193,6 +193,45 @@ int main() {
    Transpose(arr, rows, cols , transpose);
 
 
+    // creation of 2d Vectors 
+  // vector of vector 
+
+  // vector<vector<int> > arr2d;
+
+  // vector<int> a{1 , 2 ,3};
+  // vector<int> b{2 , 4 , 6};
+  // vector<int> c{1 , 3 , 7};
+
+  // arr2d.push_back(a);
+  // arr2d.push_back(b);
+  // arr2d.push_back(c);
+
+  // for(int i = 0; i < arr2d.size(); i++){
+  //     for(int j = 0; j < arr2d[0].size(); j++){
+  //       cout << arr2d[i][j] << " ";
+  //     }
+  //   cout << endl;
+  // }
+
+    int row = 3;
+    int col = 5;
+
+    vector<vector<int> > arr(row , vector<int>(col , 2025));
+
+    for(int i = 0; i < arr.size(); i++){
+        for(int j = 0; j < arr[i].size(); j++){
+            cout << arr[i][j] << " ";
+        }
+      cout << endl;
+    }
+
+  // homework of 2d vector 
+  vector<vector<int> > arr2(5 , vector<int>(5 , -8));
+  cout << arr2[2][3];
+  cin >> arr2[3][4];
+  return 0;
+
+
 
  
 }
