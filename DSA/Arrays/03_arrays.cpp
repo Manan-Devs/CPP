@@ -24,7 +24,7 @@ int getMin(int arr[][4] , int rows , int cols){
         }
     }
   return mini;
-}
+
 
 
 // function to print Transpose of matrix 
