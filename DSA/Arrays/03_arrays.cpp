@@ -11,7 +11,7 @@ int getMax(int arr[][4] , int rows , int cols){
              maxi = arr[i][j];
         }
     }
-  return maxi;
+  return maxi
 }
 
 // function to find minimum element in 2-d Array
