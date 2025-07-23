@@ -2,7 +2,7 @@
 using namespace std;
 
 //  function to insert element at a given position
-  void insertion(int n , int pos , int x){
+  void insertion(int n , int pos , int x)
      //creation of arra
       int arr[n];
       //taking elements of the array
