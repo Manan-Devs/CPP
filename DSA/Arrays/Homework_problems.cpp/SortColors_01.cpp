@@ -13,7 +13,7 @@ using namespace std;
    
    while(mid <= high){
     // if any element given is negative 
-       if (arr[mid] == 0){
+       if (arr[low] == 0){
         swap(arr[low],arr[mid]);
         mid++;
         low++;
