@@ -9,7 +9,6 @@ void printArray(int arr[], int size) {
 		cout << arr[i] << " ";
 	}
 	cout << endl;
-}
 
 // increase the 0-th index value of arr to 10
 void inc(int arr[], int size) {
