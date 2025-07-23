@@ -15,7 +15,7 @@ using namespace std;
                arr[i] = x; // inserting the element at the given position
                cout << arr[i] << " "; // printing the array after insertion
             }
-    }
+    
 
     int main() {
     int n;
