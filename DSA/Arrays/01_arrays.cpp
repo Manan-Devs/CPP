@@ -3,7 +3,7 @@
 using namespace std;
 
 // print an array (array-printing);
-void printArray(int arr[], int size) {
+void printArray(int arr[], int size) 
 	
 	for(int i=0; i<size; i++) {
 		cout << arr[i] << " ";
