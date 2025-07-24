@@ -8,7 +8,7 @@ int main() {
     cout << "Enter number of rows: ";
     cin >> rows;
        
-    for (int i = 1; i <= rows; i++){
+    for (int i = 1; i <= rows; i++)
        if (i == 1 || i == rows){
          for (int j = 1; j <= rows; j++){
              cout << "*";
