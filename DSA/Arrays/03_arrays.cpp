@@ -3,7 +3,7 @@ using namespace std;
 
 
 // function to find maximum element in 2-d Array
-int getMax(int arr[][4] , int rows , int cols){
+int getMax(int arr[][4] , int rows , int cols)
     int maxi = INT_MIN;
     for(int i = 0; i < rows; i++)
         for(int j = 0; j < cols; j++){
