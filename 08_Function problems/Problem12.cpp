@@ -3,7 +3,7 @@ using namespace std;
 
 int sumSquaresUptoNeven_Optimized(int N) {
     int k = N / 2;
-    return 4 * (k * (k + 1) * (2 * k + 1)) / 6
+    return 4 * (k * (k + 1) * (2 * k + 1)) / 6;
 }
 
 
