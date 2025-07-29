@@ -8,7 +8,7 @@ int getMax(int arr[][4] , int rows , int cols){
     for(int i = 0; i < rows; i++)
         for(int j = 0; j < cols; j++){
              if(arr[i][j] > maxi)
-             maxi = arr[i][j];
+             maxi = arr[i][j]
         }
     }
   return maxi
