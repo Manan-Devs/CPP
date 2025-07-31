@@ -12,7 +12,7 @@ using namespace std;
 int main() {
   int rows;
   int cols;
-  cout << "Enter your rows: ";
+  cout << "Enter your rows: "
   cin >> rows;
   cout << "Enter your cols:";
   cin >> cols;
