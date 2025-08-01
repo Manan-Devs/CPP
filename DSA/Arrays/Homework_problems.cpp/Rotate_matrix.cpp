@@ -25,7 +25,7 @@ int main() {
   for(int i = 0; i < rows; i++){
       for(int j = 0; j < cols; j++){
          cin >> arr[i][j];
-      }
+      
   }
       cout << "Your rotating matrix by 90 degrees" << endl;
      for(int a = 0; a < cols; a++){
