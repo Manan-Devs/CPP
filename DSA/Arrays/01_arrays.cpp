@@ -7,7 +7,7 @@ void printArray(int arr[], int size)
 	
 	for(int i=0; i<size; i++) {
 		cout << arr[i] << " ";
-	
+}
 	cout << endl;
 
 // increase the 0-th index value of arr to 10
