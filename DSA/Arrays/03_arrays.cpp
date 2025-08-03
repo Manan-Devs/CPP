@@ -10,7 +10,7 @@ int getMax(int arr[][4] , int rows , int cols){
              if(arr[i][j] > maxi)
              maxi = arr[i][j]
         }
-    s}
+}
   return maxi
 }
 
@@ -235,3 +235,4 @@ int main() {
 
  
 }
+
