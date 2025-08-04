@@ -31,9 +31,10 @@ int main() {
        for(int i = rows - 1; i >= 0; i--){
           cout << "It's not correct output";
       }
-       cols++;
+       cols++
      }
       
 }
+
 
 
