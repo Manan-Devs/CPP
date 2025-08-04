@@ -8,7 +8,7 @@ using namespace std
 
 
 
-int main() 
+int main() {
   int rows;
   int cols;
   cout << "Enter your rows: ";
@@ -35,4 +35,5 @@ int main()
      }
       
 }
+
 
