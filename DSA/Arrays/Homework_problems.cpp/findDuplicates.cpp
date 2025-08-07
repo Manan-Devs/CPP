@@ -4,7 +4,7 @@
 using namespace std;
 
 // function to find first repeated element in array using hashing
-int findDuplicates(int size, const vector<int>& arr) {
+int findDuplicates(int size, const vector<int>& arr) 
     unordered_map<int, int> hash;
     for(int i = 0; i < size; i++) {
         hash[arr[i]]++;
@@ -29,6 +29,7 @@ int main () {
     cout << "Your first repeated element in your array is: " << findDuplicates(size, arr) << endl;
 
 }
+
 
 
 
