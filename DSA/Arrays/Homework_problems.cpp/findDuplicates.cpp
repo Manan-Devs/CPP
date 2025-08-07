@@ -13,7 +13,7 @@ int findDuplicates(int size, const vector<int>& arr) {
         }
     }
     return -1; // no duplicate found
-
+}
 
 int main () {
     int size;
@@ -29,5 +29,6 @@ int main () {
     cout << "Your first repeated element in your array is: " << findDuplicates(size, arr) << endl;
 
 }
+
 
 
