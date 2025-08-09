@@ -8,7 +8,7 @@ using namespace std;
       //taking elements of the array
       for(int i = 0; i < n; i++){
          cin >> arr[i];
-      }
+      
         //insertion loop
             for(int i = 0; i < n; i++){
                 if(i == pos)
@@ -54,3 +54,4 @@ using namespace std;
 //           cout << arr[i] << " ";
 //      }
 //  }
+
