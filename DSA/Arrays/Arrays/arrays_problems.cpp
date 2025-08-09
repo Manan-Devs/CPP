@@ -1,5 +1,5 @@
 #include <iostream>
-using namespace std
+using namespace std;
 
 //  function to insert element at a given position
   void insertion(int n , int pos , int x) { 
@@ -54,6 +54,7 @@ using namespace std
 //           cout << arr[i] << " ";
 //      }
 //  }
+
 
 
 
