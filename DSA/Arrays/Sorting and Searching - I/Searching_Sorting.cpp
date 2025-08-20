@@ -15,7 +15,7 @@ int binarySearch(int arr[] , int size , int target) {
      while(start <= end){
          int element = arr[mid];
 
-         if (element == target){
+         if (element == target)
              return mid;
          }
 
@@ -66,6 +66,7 @@ int main() {
 
 
 }
+
 
 
 
