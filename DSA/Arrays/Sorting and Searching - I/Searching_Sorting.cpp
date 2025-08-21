@@ -6,7 +6,7 @@ using namespace std;
 
 
 // Binary Search Code 
-int binarySearch(int arr[] , int size , int target) 
+int binarySearch(int arr[] , int size , int target) {
      int start = 0
      int end = size - 
 
@@ -66,6 +66,7 @@ int main() {
 
 
 }
+
 
 
 
