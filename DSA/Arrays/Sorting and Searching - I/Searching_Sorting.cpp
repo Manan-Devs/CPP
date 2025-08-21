@@ -33,7 +33,7 @@ int binarySearch(int arr[] , int size , int target) {
      }
      // element not found 
      return -1;
-}
+
 
 
 
@@ -66,6 +66,7 @@ int main() {
 
 
 }
+
 
 
 
