@@ -19,7 +19,7 @@ int binarySearch(int arr[] , int size , int target) {
              return mid;
          }
 
-         else if (target < element){
+         else if (target < element)
              // search in left
              end = mid - 1;
          }
@@ -66,6 +66,7 @@ int main() {
 
 
 }
+
 
 
 
